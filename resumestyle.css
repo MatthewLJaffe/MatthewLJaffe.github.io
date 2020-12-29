@@ -1,0 +1,131 @@
+body {
+    color: rgb(78, 82, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 92%;
+}
+
+/*this is for formating the resume to be like a physical page*/
+#page-wrapper {
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+    border-style: solid;    
+    border-color: lightgray;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+/*this is making my title white on a blue background centered and in a nice font*/
+h1  {
+    margin: auto;
+    padding: 2%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    background-color:   #104477;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*this makes my phone number / email centered below my address*/
+#contact-forms  {
+    text-align: center;
+}
+
+/* makes my section headers blue and closer to the section so that things aren't as spaced out*/
+h4  {
+    color: #20609c;
+    padding-left: 2%;
+    margin-top: 1%;
+    margin-bottom: .25%;
+}
+
+
+/*makes it so that my images snap to left without messing up other elements*/
+.pic {
+    float: left;
+    padding-right: 2%;
+    width: 4%;
+    height: 4%;
+    padding-bottom: 5%;
+}
+
+/*class assigned to every section with an image so that the content goes cleanly next to image*/
+.section-holder {
+    float: left;
+}
+
+/*I'm using span to blanket targets things like smaller titles of things to make darker and bold*/
+span  {
+    font-weight: bold;
+    color: black;
+}
+
+/*I also made address lines span but didn't like them bolded by snapping them left they look neater than centered*/
+span.address-line {
+    margin-top: 3%;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
+
+/*this is for all of the dates of things on my resume I wanted them all alligned to the right and didn't like them bolded*/
+.item-date  {
+    position: absolute;
+    font-weight: normal;
+    left: 65%;
+}
+
+/*i used this to get my skill lists next to eachoter*/
+div.skills-list  {
+    float: left;
+    padding-right: 8%;
+}
+
+/*used to keep things from wrapping after the use of float*/
+.clear-both{
+    clear: both;
+}
+
+/*banner always visible at top of page 
+this is where I use my second background color no -20 porfavor*/
+#banner  {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: rgb(78, 82, 87); 
+    width: 100%;
+    padding-top: .4%;
+}
+
+/*I wanted my list titles and lists to be closer together*/
+ul  {
+    margin-top: .25%;;
+}
+
+/*I didn't want paragraphs to be so spaced out*/
+p  {
+    margin-top: .25%;
+}
+
+/*wanted to keep elements at top of page perfectly centered*/
+.upper-div {
+    width: 50%;
+    margin: auto;
+    padding-top: 2%;
+}
+
+/*My phone number / email looked nicer when spaced apart a little*/
+.contact-link  {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+/*this makes it so that not everying gets stuck to the left after I used float*/
+hr  {
+    border-top: solid lightgray;
+}
+
+
+
+
