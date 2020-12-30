@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Resume</title>
+    <title>Matthew's Resume</title>
     <link rel="stylesheet" href="resumestyle.css">
 </head>
 <body>
     <div id="page-wrapper">
         <section id ="upper-content">
             <header>
-                <div id="banner"></div>
+                <div class = "banner color-bar"></div>
                 <h1 id = "name">Matthew Jaffe</h1>
-            </header>        
-            <div id = "page-links" class="upper-div">
-                <nav>
-                    <a class="contents-link" href="#skills-header">Skills</a>
-                    <a class="contents-link" href="#education-header">Education</a>
-                    <a class="contents-link" href="#experience-header">Experience</a>
-                    <a class="contents-link" href="#projects-header">Projects</a>
-                    <a class="contents-link" href="#involvement-header">Leadership / School Involvement</a>
-                    <br>
-                </nav>
-            </div>
-            <div id = "contact-info" class="upper-div">
-                <address id="my-addresses">
-                    <p class= "address">
-                        <span id="home-address-label" class="address-line">Home Address:</span>
-                        <span id="home-address-street" class="address-line">3129 5th Street North,</span>
+            </header>
+            <hr>        
+        </section>
+
+        <div class = "grid">
+
+            <section id = "education-info" class="lhs">   
+                <div>
+                    <h4 id = "education-header">Education</h4>
+                    <p id = "education-content">
+                        <span>Virginia Tech BS, Computer Science</span> <br>
+                        Minor: Human Computer Interaction <br>
+                        Expected graduation: June 2023 <br>
+                         In Major GPA: 3.93
+                    </p>
+                </div> 
+                <hr>                   
+            </section>
+
+            <section id = "contact" class = "rhs">
+                <h4>Contact</h4>
+                <p>
+                        <span id="home-address-label">Home Address:</span>
                         <span id="home-address-area" class="address-line">Arlington VA, 22201</span>
-                    </p>
-                    <p class="address">
-                        <span id="school-address-label" class="address-line">School Address:</span>
-                        <span id="school-address-street" class="address-line">901 Meadow Drive Apt 402,</span>
+                        <br>
+                        <span id="school-address-label">School Address:</span>
                         <span id="school-address-area" class="address-line">Blacksburg, VA, 24060</span>
-                    </p>
-                </address>
-                <address id = "contact-forms">
-                    <a class="contact-link" href="tel:+17038197300">(703) 819-7300</a>
-                    <a class="contact-link" href="mailto:jmatthew23@vt.edu">jmatthew23@vt.edu</a>
-                    <a class="contact-link" href="https://github.com/MatthewLJaffe">GitHub</a>
-                </address>
-            </div>     
-        </section>
-        <hr>
-        
-        <section id = "education-info">   
-            <img src="./educationPic.png" alt="Education" id="education-pic", class="pic", width="50", height="45">
-            <div class="section-holder">
-                <h4 id = "education-header">Education</h4>
-                <p id = "education-content">
-                    Virginia Tech <br>
-                    <span></span> BS, Computer Science</span> (Minor: Human Computer Interaction) <br>
-                    Expected graduation: June 2023; In Major GPA: 3.93
+                        <a class="contact-link" href="tel:+17038197300">(703) 819-7300</a>
+                        <a class="contact-link" href="mailto:jmatthew23@vt.edu">jmatthew23@vt.edu</a>
+                        <a class="contact-link" href="https://github.com/MatthewLJaffe">GitHub</a>
                 </p>
-            </div> 
-            <br class="clear-both">    
-        </section>
-        <hr>
-        
-        <section id = "skills-info">
-            <img src="./skillsPic.png" alt="Skills" id="skills-pic", class="pic", width="50", height="45">
+                <hr>                   
+            </section>
+
+            <section id="experience-info" class="lhs">
+                <h4 id="experience-header">Experience</h4>
+                <span id="id-tech-text" class="item-label experience">Virtual Computer Science Instructor, iD Tech</span> <span id="id-tech-date" class="item-date experience">June - August 2020</span> 
+                <ul id = "id-tech-list" class="item-list experience">
+                    <li>Planned and taught lessons on Unity, C#, and Java to small classes through Zoom</li> 
+                    <li>Responsible for troubleshooitng software issues for class</li>
+                </ul>
+                <span id="cashier-text" class="item-label experience">Cashier, Harris Teeter</span> <span id="cashier-date" class="item-date experience">March - August 2019</span>
+                <ul id="cashier-list" class="item-list experience" >
+                    <li>Operated cash register and processed payments maintaining quality customer assurance at all times</li>
+                    <li>Assisted in the training of three new employees</li>
+                </ul>
+                <span id = "gallaudet-text" class="item-label experience">Computer Software Support, Gallaudett University</span> <span id="gallaudet-date" class="item-date experience">June 2018 - July 2018</span> 
+                <ul id = "gallaudet-list" class="item-list experience">
+                    <li>Developed a virtual reality maze and path learning simulation for Gallaudet Vestibular and Balance Lab</li>
+                    <li>Independently learned and utilized UE4, and Blueprint</li>
+                    <li>Utilized Git for source control on the project</li>
+                </ul>
+                <hr>
+            </section>
+
+            <section id = "skills-info" class = "rhs">
                 <h4 id = "skills-header">Skills</h4>
                 <div id="languages" class = "skills-list">
                     <span id="languages-label">Programming Languages</span>
@@ -83,41 +90,11 @@
                         <li>Git</li>
                         <li>Unreal Engine 4</li>
                     </ul>
-                </div>              
-            <br class="clear-both">
-        </section>
-        <hr>       
+                </div>  
+                <hr>                   
+            </section>
 
-        
-        <section id="experience-info">
-            <img src="./experiencePic.png" alt="Experience" id="experience-pic", class="pic", width="50", height="45">
-            <div class="section-holder">
-                <h4 id="experience-header">Experience</h4>
-                <span id="id-tech-text" class="item-label experience">Virtual Computer Science Instructor, iD Tech</span> <span id="id-tech-date" class="item-date experience">June - August 2020</span> 
-                <ul id = "id-tech-list" class="item-list experience">
-                    <li>Planned and taught lessons on Unity, C#, and Java to small classes through zoom</li> 
-                    <li>Troubleshot software issues for class</li>
-                </ul>
-                <span id="cashier-text" class="item-label experience">Cashier, Harris Teeter</span> <span id="cashier-date" class="item-date experience">March - August 2019</span>
-                <ul id="cashier-list" class="item-list experience" >
-                    <li>Operated cash register and processed payments maintaining quality customer assurance at all times</li>
-                    <li>Assisted in the training of three new employees</li>
-                </ul>
-                <span id = "gallaudet-text" class="item-label experience">Computer Software Support, Gallaudett University</span> <span id="gallaudet-date" class="item-date experience">June 2018 - July 2018</span> 
-                <ul id = "gallaudet-list" class="item-list experience">
-                    <li>Developed a virtual reality maze and path learning simulation for Gallaudet Vestibular and Balance Lab</li>
-                    <li>Independently learned and utilized UE4, and Blueprint</li>
-                    <li>Utilized Git for source control on the project</li>
-                </ul>
-            </div>
-            <br class="clear-both">                       
-        </section>
-
-        <hr>
-
-        <section id = "projects-info">
-            <img src="./ProjectsPic.png" alt="Projects" id="projects-pic", class="pic", width="50", height="45">
-            <div class="section-holder">
+            <section id = "projects-info" class="lhs">
                 <h4 id = "projects-header">Projects</h4>
                 <span id = "contrast-text" class="item-label projects">Puzzle Game "Contrast"</span> <span id="contrast-date" class="item-date">October 2020</span> 
                 <ul id="contrast-list" class = "item-list projects">
@@ -127,18 +104,18 @@
                 <ul id = "fog-list" class="item-list projects">
                     <li>Developed a board style game with procedurally generated layout using Unity</li>
                 </ul>
+                <span id = "it-takes-too-text" class="item-label projects">Story Driven Game "It Takes Too"</span> <span id="it-takes-too-date" class="item-date">Febuary 2020</span>
+                <ul id = "it-takes-too-list" class="item-list projects">
+                    <li>Worked with team to create a story driven platformer for VTGP's spring 2020 game jam</li>
+                </ul>
                 <span id = "monopoly-text" class="item-label projects">Monopoly</span> <span id="monopoly-date" class="item-date">September 2018 - January 2019</span> 
                 <ul id= "monopoly-list" class = "item-list projects"> 
                     <li>Implemented design plan using Processing with Java to create fully functional monopoly game</li>
                 </ul>
-            </div>  
-            <br class="clear-both">         
-        </section>
-        <hr>
-        
-        <section id = "involvement-info">
-            <img src="./involvementPic.png" alt="Involvement" id="involvement-pic", class="pic", width="45", height="45">
-            <div class="section-holder">
+                <hr>
+            </section>
+                   
+            <section id = "involvement-info" class="rhs">
                 <h4 id = "involvement-header"> Leadership and School Involvement</h4>
                 <span id = "cogent-text" class="item-label"> Worked for COGENT Lab at Virginia Tech</span> <span id="cogent-date" class="item-date">Feb - May 2020</span> 
                 <ul id="cogent-list" class = "item-list involvement">
@@ -158,9 +135,9 @@
                         Directed and assigned work to students to help strengthen their algebra foundation
                     </li>
                 </ul>
-            </div>
-            <br class="clear-both">
-        </section>
+                <hr>
+            </section>
+        </div>
     </div>
 </body>
 </html>
