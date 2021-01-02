@@ -52,6 +52,12 @@ h4  {
     margin-top: 2%;
     margin-bottom: 1%;
 }
+#experience-header{
+    margin-top: 4.20%;
+}
+#skills-header{
+    margin-top: 0%;
+}
 
 /*I'm using span to blanket targets things like smaller titles of things to make darker and bold*/
 span  {
